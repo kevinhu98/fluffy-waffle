@@ -5,12 +5,12 @@ import App from './App';
 
 const mongoose = require('mongoose')
 
-const url = `mongodb+srv://kevin:${password}@cluster0.8xh0x.mongodb.net/<note-app>?retryWrites=true&w=majority`
+const url = `mongodb+srv://kevin:${password}@cluster0.8xh0x.mongodb.net/movies?retryWrites=true&w=majority`
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
 const movieSchema = new mongoose.Schema({
-  //id: String,
+  id: String,
   title: String,
   releaseDate: Date,
   imageUrl: String,
