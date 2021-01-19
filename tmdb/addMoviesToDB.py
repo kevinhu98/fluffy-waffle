@@ -8,6 +8,7 @@ load_dotenv()
 
 tmdb.API_KEY = os.getenv('TMDB_API_KEY')
 
+#update moviesdb unless already exists with findOne --- https://stackoverflow.com/questions/27482806/check-if-id-exists-in-a-collection-with-mongoose
 movies = [678491]
 
 try:
